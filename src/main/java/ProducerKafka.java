@@ -2,7 +2,7 @@ import java.util.Properties;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-
+h
 public class ProducerKafka {
 	
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class ProducerKafka {
 				myProducer.send(new  ProducerRecord<String, String>("my-fifth-topic", "Message Value : " + Integer.toString(i)));
 				myProducer.send(new  ProducerRecord<String, String>("my-fifth-topic", "url:<local-directory-path>/file"));
 
-				
+				System.out.println("HI");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
