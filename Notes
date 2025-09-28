@@ -1,0 +1,698 @@
+Start zookeeper : .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties 
+
+Start kafka : .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+              .\bin\windows\kafka-server-start.bat .\config\server-1.properties
+			   
+			  .\bin\windows\kafka-server-start.bat .\config\server-2.properties
+
+Create topic in Broker : .\bin\windows\kafka-topics.bat --create --topic Kafka-Deep-Learning --bootstrap-server localhost:9092
+
+Describe topic(Topic Specs): .\bin\windows\kafka-topics.bat --describe --topic Kafka-Deep-Learning --bootstrap-server localhost:9092
+
+Describe topic - .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --describe --topic kafkalearning
+
+Live Producer : .\bin\windows\kafka-console-producer.bat --topic Kafka-Deep-Learning --bootstrap-server localhost:9092
+
+Live Consumer : .\bin\windows\kafka-console-consumer.bat --topic Kafka-Deep-Learning --from-beginning --bootstrap-server localhost:9092
+
+broker message check  : .\bin\windows\kafka-consumer-groups.bat --bootstrap-server localhost:9092 --describe --all-groups --all-topics
+
+Create topic in Broker [with Replica]: .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --create --topic kafkalearning --partitions 4 --replication-factor 3
+
+Describe all Topics : .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --describe
+
+prevent zokeeper crashing : c:\kafka\zookeeper-data\version-2\
+
+                            c:\kafka\zookeeper-data\
+                    
+					        c:\kafka\kafka-logs\
+
+                            C:\kafka\kafka-logs-1
+
+                            C:\kafka\kafka-logs-2
+
+=======================================
+
+ cd C:\kafka
+
+==============================================================================
+
+Tasks :
+
+1.Completable furute 
+2.Java lambda and arrows
+3.Stream API
+4.Types of loggers
+5.Controller vs rest controller
+6.Responseentity<?>
+7.Kafka Replication factor 
+8.Kafka topic creation combination
+9.Java bean 
+10.Spring Bean
+11. org.apache.kafka.clients.NetworkClient   : [Producer clientId=Producer_Kafka-producer-1] Node -1 disconnected.
+12.java short
+13. Java threads (syncronized , Asynchronized)
+14.types of exception handling 
+15.Types of joins 
+16.Generics in java
+17. serializer in kafka consumers 
+=================================================================================================================
+
+
+C:\Users\PC\Documents\Apowersoft\Apowersoft Online Screen Recorder
+
+
+=================================================================================================================
+
+youtube Kafka cluster
+
+1. Data Engineering Minds
+
+2. New Generation
+
+3.itzsoft
+
+4.Stephane Maarek
+
+5.Sachin Shukla - Hands on Kafka Cluster in KRaft mode setup in AWS
+
+6.Offset Commit, Rebalancing & Consumer Group ~ Key Concepts in Kafka(Part2) - Hello Byte
+
+7. Apache Kafka® Consumers and Consumer Group Protocol - Confluent 
+
+8. Data Engineering Minds
+
+
+======================================================================================================
+
+
+1.Avro
+
+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
+
+
+===========================================================================================================
+
+
+cluster targets 
+
+1 .FDB cluster
+
+2. Clickhouse cluster
+
+3. Kafka Cluster
+
+Broker configuration
+
+Custom Partitioner
+
+============================================================================================================
+
+Extremely Hardworking  
+
+High Qualiy Skills  
+
+1.5L Salary  
+
+Money 
+
+gold
+
+car 
+
+bike
+
+rich
+
+foreign trip
+
+Drop shipping
+
+biriyani shop 
+
+family business
+
+cash flow generating
+
+======================================================================================================
+
+
+ok i want to master Java , springboot , kafka ,GIT , jenkins , Docker, Kubernetes by using just hardwork category 1 
+how to do it , how long does it take (not more than 3 months ) give me 25 topics in each skills and  steps to achive it
+
+ou can make big progress in Java, Spring Boot, Kafka, Git, Jenkins, Docker & Kubernetes in 3 months with consistent, focused effort (Category 1 hard work = working hard every day, but sustainably). Whether you “master” them depends on your baseline, but you can reach a strong mid‐to‐high competency.
+
+Here’s a plan + topic lists + steps to maximize learning in 3 months.
+
+🎯 Plan Overview: 3‑Month Learning Strategy (Category 1 Hard Work)
+
+You have ~90 days. To use them well:
+
+Daily time: ~5‑6 hours/day minimum for learning + practice.
+
+Weekly schedule: One main topic + small review + project practice.
+
+Hands‑on: Build something, break it, debug, re‑build.
+
+Review & revise: Every week revisit older topics.
+
+Use tools: code, exercises, tutorials, docs, source code reading.
+
+⚙️ Major Skills & Topic Lists
+
+Here are 25 important subtopics for each technology. You don’t need to master all 25 deeply, but aim to cover them at least roughly, and some in depth.
+
+1. Java
+
+Basic syntax, data types, control flow (if, loops)
+
+OOP: classes, objects, inheritance, interfaces, abstract classes
+
+Exception handling (try/catch/finally, custom exceptions)
+
+Collections framework (List, Set, Map, Queues)
+
+Generics
+
+Java 8 features: Lambdas, Streams, Optional
+
+Concurrency – Threads, Runnable, ExecutorService, Futures
+
+Synchronization, Locks, Volatile, Atomic types
+
+I/O: File, Streams, NIO, serialization
+
+JDBC / basic database connectivity
+
+JVM internals: GC, memory model, heap vs stack, JIT
+
+Class loading, reflection
+
+Annotations, meta‑annotations, custom annotations
+
+Java modules (JPMS) if needed
+
+Designing vs code: SOLID principles, design patterns (Singleton, Factory, Observer etc.)
+
+Testing: JUnit, mocking (Mockito)
+
+Build tools: Maven or Gradle
+
+Logging (SLF4J, Logback / Log4j)
+
+Java versions & upgrades (knowing new features)
+
+Performance tuning and profiling (heap dumps, thread dumps)
+
+Security basics: input validation, encryption, hashing, secure coding
+
+APIs: RESTful, JSON serialization/deserialization
+
+Date/Time APIs (java.time)
+
+Functional programming in Java (map/filter/reduce etc.)
+
+Best practices, clean code and code readability.
+
+2. Spring Boot
+
+Spring Boot setup / project structure
+
+Dependency Injection (DI), Auto wiring
+
+Spring configuration (application.properties/yml)
+
+Controller, Service, Repository layers
+
+RESTful APIs
+
+Spring Data JPA / ORM (using Hibernate)
+
+Database migration (Liquibase / Flyway)
+
+Validation (Bean Validation)
+
+Exception Handling in Spring Boot (global handlers)
+
+Security: Spring Security, JWT, OAuth2 basics
+
+Testing: Integration tests, Unit tests with Spring Boot Test
+
+Actuator (monitoring endpoints)
+
+Logging and tracing
+
+CORS, Filters, Interceptors
+
+Caching (e.g., using Ehcache, Redis)
+
+Scheduling tasks (cron jobs)
+
+Profiles (dev, prod) and external config
+
+Spring Boot starters and dependencies management
+
+Asynchronous programming (async, @Async)
+
+Messaging (with Kafka / RabbitMQ)
+
+File upload/download, handling multipart requests
+
+WebSockets / Server Sent Events (if needed)
+
+Versioning REST APIs
+
+Best practices, error handling, clean architecture
+
+Deployment: packaging (jar/war), containerization.
+
+3. Kafka
+
+Kafka architecture: brokers, clusters, Zookeeper (if version uses it)
+
+Topics and Partitions, Replication factor
+
+Producers: writing messages, serializers
+
+Consumers: reading messages, deserializers
+
+Consumer groups, offsets, committing offsets
+
+Partitioning strategy (how keys map)
+
+Retention policies, log compaction vs deletion
+
+Exactly once / at least once / at most once delivery semantics
+
+Kafka Connect (source and sink connectors)
+
+Kafka Streams API
+
+Schema registry (Avro / Protobuf / JSON)
+
+Message format and compression
+
+Monitoring: metrics, lag, throughput, broker health
+
+Fault tolerance: what happens when brokers die, leader election
+
+Security: SSL/TLS, authentication, ACLs
+
+Configuration tuning: batch sizes, linger, buffer memory etc.
+
+Consumer partition rebalances, partition reassignment
+
+Throughput vs latency trade‑offs
+
+Kafka cluster setup: replication, under‑replicated partitions
+
+Data serialization and backward/forward compatibility
+
+Brokers vs clients version compatibility
+
+Handling schema evolution
+
+Producer/Consumer error handling, retries
+
+Kafka for event sourcing or CQRS use cases
+
+Deploying Kafka in Docker / Kubernetes for practice.
+
+4. Git
+
+Git basics: init, clone, commit, status
+
+Branching and merging (feature branches, master, dev etc.)
+
+Pull, push, fetch, remote repos
+
+Rebasing vs merging
+
+Conflict resolution
+
+Tagging and releases
+
+Working with .gitignore
+
+Stashing, cherry‑pick, revert
+
+Undoing changes (reset, checkout)
+
+Branching strategies (GitFlow, trunk‑based)
+
+Working with remote forks, pull requests
+
+Hooks (pre‑commit, post‑commit)
+
+Submodules / subtree (if needed)
+
+Git configuration (user, aliases)
+
+Git workflows in teams
+
+History inspection: log, reflog, blame
+
+Resolving merge conflicts, rebase conflicts
+
+Performance: large repos, sparse checkout
+
+Using GUI tools / IDE integration
+
+Best practices for commit messages
+
+Security: signing commits, preventing secrets in repos
+
+Git for CI/CD pipelines
+
+Rewriting history when needed (interactive rebase)
+
+Managing binary / large files (Git LFS)
+
+Backup / backup branches.
+
+5. Jenkins
+
+Jenkins installation and setup
+
+Pipeline vs Freestyle jobs
+
+Jenkinsfile (Declarative vs Scripted pipelines)
+
+Plugins: use, updates, managing them
+
+Build triggers (on commit, timer‑based, manual)
+
+Integration with Git, GitHub / Bitbucket etc.
+
+Building Java projects: Maven / Gradle integration
+
+Running tests in builds; test reports & reports aggregation
+
+Artifact management (store, versioning)
+
+Handling credentials / secrets securely
+
+Parallel builds / stages in pipeline
+
+Parameterized builds
+
+Build agents and distributed builds
+
+Notifications (Slack/email etc.)
+
+Build job chaining, dependencies
+
+Environment variables and configuration
+
+Handling failures and rollback strategies
+
+Artifact deployment (to servers, docker registry)
+
+Security configuration: users, roles, authorization
+
+Backup of Jenkins, pipelines, jobs
+
+Monitoring / logging of Jenkins
+
+Blue-green / Canary deployment strategies via Jenkins
+
+Integration with Docker / Kubernetes agents
+
+Performance / optimizing build times
+
+Maintaining Jenkins upgrades, backup.
+
+6. Docker & Kubernetes (combined but split)
+
+Docker topics:
+
+What is a container vs VM
+
+Docker architecture: Docker Daemon, client, engine
+
+Docker images: building, layering, Dockerfile best practices
+
+Container lifecycle (run, stop, remove etc.)
+
+Volumes, Bind Mounts, Persistent storage
+
+Networking: bridge, host, overlay networks
+
+Docker Compose for multi‑container apps
+
+Registries (Docker Hub / private registries)
+
+Image optimization, caching, multistage builds
+
+Security: image scanning, privileges, kernel namespaces etc.
+
+Debugging containers, logs
+
+Resource limits (CPU, memory)
+
+Docker swarm (if needed) or alternatives
+
+Health checks
+
+EntryPoint vs CMD etc.
+
+Multi‑arch images
+
+Container restart policies
+
+Environment variables and configuration inside containers
+
+Docker on Mac/Linux/Windows differences
+
+Storage drivers, overlayfs etc.
+
+Handling secrets in containers
+
+Container monitoring and logging
+
+Using Docker in CI/CD pipelines
+
+Cleanup of images / unused containers
+
+Pulling/pushing images, securing registry.
+
+Kubernetes topics:
+
+Architecture: control plane (API server, etcd, scheduler), worker nodes etc.
+
+Pods: single vs multi‑container, lifecycle
+
+Deployments, ReplicaSets
+
+Services: ClusterIP, NodePort, LoadBalancer
+
+Namespaces
+
+ConfigMaps & Secrets
+
+Volumes & persistent storage (PVC, PV)
+
+StatefulSets, DaemonSets, Jobs, CronJobs
+
+Ingress and Ingress controllers
+
+Networking: CNI, network policies, DNS within cluster
+
+Scaling: Horizontal Pod Autoscaler, Vertical scaling, cluster autoscaler
+
+Rolling updates & rollbacks
+
+Scheduling: node affinity, taints and tolerations
+
+Resource requests & limits
+
+Monitoring & logging (Prometheus, Grafana etc.)
+
+Health probes: liveness, readiness
+
+Security: RBAC, PodSecurityPolicies / PodSecurityStandards, admission controllers
+
+Custom Resource Definitions (CRDs) and Operators
+
+Helm charts
+
+Multi‑cluster / high availability setup
+
+Storage classes, dynamic provisioning
+
+Backup & disaster recovery
+
+Service mesh basics (optional, e.g., Istio)
+
+Observability & tracing
+
+Upgrades & version compatibility, cluster maintenance.
+
+🗓️ Suggested 3‑Month Schedule
+
+Here is a suggested weekly plan. You may adjust depending on prior knowledge.
+
+Week	Focus Technology	What to Learn / Do
+1	Java basics + Git basics	Cover Java topics 1‑10 + Git topics 1‑5; start a small Java project; learn Git workflow
+2	Java concurrency, testing + Git advanced	Java topics 11‑20; Git topics 6‑12; continue project, integrate version control
+3	Spring Boot fundamentals	Spring Boot topics 1‑8; build simple REST APIs
+4	Spring Boot advanced + integrate Java & Git	Spring Boot topics 9‑16; test, security, exception handling
+5	Kafka basics	Kafka topics 1‑6; set up Kafka locally; simple producer/consumer
+6	Kafka deeper + integrate with Spring Boot	Kafka topics 7‑15; use schema registry, do a microservice app that produces/consumes
+7	Docker basics	Docker topics 1‑10; containerize your Spring Boot & Kafka microservices
+8	Docker compose & integration + Git/Jenkins basics	Docker topics 11‑20; Git workflows; start Jenkins basics, build pipelines for your containerized app
+9	Kubernetes basics	K8s topics 1‑10; deploy your containers to local K8s (e.g., minikube / kind)
+10	Kubernetes advanced + Jenkins pipelines + CI/CD	K8s topics 11‑20; Jenkins: pipelines, deployment via Jenkins to K8s
+11	Polish: security, monitoring, observability	Fill in missing topics: security in all layers, monitoring Kafka, services, logging, alerting etc.
+12	Final project + review + interview prep	Build end‑to‑end microservices app using all tech: Java + Spring Boot + Kafka + Docker + K8s, CI/CD with Jenkins, Git workflow. Review weak areas. Practice explaining / debugging.
+🕒 Estimate of How Long It Takes
+
+If you follow above plan with ~5‑6 hours/day:
+
+Basic competence in each tech (Java, Spring Boot, Git) in ~4‑5 weeks.
+
+Kafka + Docker + Kubernetes need hands‑on time; expect 2‑3 weeks each to build comfort.
+
+Full integration + projects + polish + security + production‑style aspects mostly in last 4‑5 weeks.
+
+So 3 months is tight but possible to reach solid competence, not “guru” level. Mastery (deep internals, heavy optimization) will take longer.
+
+🧰 Tips to Get Most Out of Hard Work Level 1
+
+Use small projects and gradually increase complexity. E.g., simple REST API → microservice → message passing with Kafka → dockerize → deploy to K8s.
+
+Code every day. Even small tasks count.
+
+Read official docs; try to read source code of frameworks when possible.
+
+Get feedback — code reviews, posting on forums.
+
+Make mistakes — break things, debug.
+
+Keep a journal: what you learn each day; areas that were hard; revisit them.
+
+Do spaced repetition: revisit old topics after a few weeks.
+
+If you like, I can lay out a day‑by‑day schedule for all 90 days for your level so you can hit a strong mastery in these techs. Do you want that?
+
+
+=======================================================================================================
+
+GIT :
+
+🟢 1. Core Concepts (Beginner)
+
+These are the fundamentals. Without these, Git is frustrating.
+
+✅ Repositories (git init, git clone)
+
+✅ Staging and committing (git add, git commit)
+
+✅ Branches (git branch, git checkout, git switch)
+
+✅ Merging (git merge)
+
+✅ Status & logs (git status, git log)
+
+✅ Remote repositories (git remote, git push, git pull, git fetch)
+
+✅ Basic .gitignore
+
+🟡 2. Daily Workflow Commands (Intermediate)
+
+For effective daily usage and avoiding common mistakes.
+
+✅ git stash — temporarily save changes
+
+✅ git diff — see what changed
+
+✅ git reset (soft, mixed, hard) — undo things
+
+✅ git restore — recover files or discard changes
+
+✅ git rebase (interactive too) — clean up commit history
+
+✅ git cherry-pick — apply a commit from one branch to another
+
+✅ Tracking branches (--track, --set-upstream-to)
+
+✅ Resolving merge conflicts
+
+✅ Understanding HEAD, working directory, and staging area
+
+🟠 3. Collaboration & Best Practices
+
+How to work well in a team and avoid breaking stuff.
+
+✅ Forking, Pull Requests (PRs) — on GitHub/GitLab
+
+✅ Good commit messages (atomic, clear, meaningful)
+
+✅ Git workflows: Git Flow, GitHub Flow, trunk-based development
+
+✅ Rebasing vs Merging (and when to use each)
+
+✅ Squash and rebase before merging (for clean history)
+
+✅ Using tags and releases
+
+✅ Protected branches & code reviews
+
+🔴 4. Advanced Topics (Power User Level)
+
+These give you true control and confidence in complex scenarios.
+
+✅ Reflog (git reflog) — recover from "oh no!" mistakes
+
+✅ Submodules & monorepos
+
+✅ Hooks (e.g., pre-commit, pre-push)
+
+✅ Bisect (git bisect) — find the commit that broke something
+
+✅ Blame (git blame) — see who last changed a line
+
+✅ Patch files (git format-patch, git apply)
+
+✅ Worktrees — multiple working directories from the same repo
+
+✅ Custom aliases (e.g., git lg, git undo)
+
+✅ GPG commit signing
+
+✅ Sparse checkouts (partial repo checkout)
+
+🧠 Bonus: Understand the Git Internals (Optional but Powerful)
+
+How Git stores data: objects, trees, commits, blobs
+
+.git folder structure
+
+How HEAD and refs work
+
+Plumbing vs Porcelain commands
+
+🔧 Tools to Pair with Git
+
+GitHub CLI (gh)
+
+Git GUIs: GitKraken, SourceTree, GitHub Desktop, VS Code Git integration
+
+Diff/merge tools: Beyond Compare, Meld, KDiff3
+
+CI/CD integration (GitHub Actions, GitLab CI)
+
+📘 Resources to Learn
+
+Pro Git book (free)
+
+Git documentation: git help <command>
+
+Online courses (e.g., Udemy, freeCodeCamp)
+
+Practice sites: learngitbranching.js.org
+
+✅ Final Tip
+
+Don’t just memorize Git — practice in real or sandbox projects, break things, recover them, and build muscle memory. That’s how you really master Git.
